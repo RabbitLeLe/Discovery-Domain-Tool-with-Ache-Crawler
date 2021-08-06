@@ -1,0 +1,18 @@
+
+# Classifies a page as relevant by matching the lists of regular expressions provided against multiple fields: 
+# url, title, content, and content_type.
+type: regex
+parameters:
+    url:
+      boolean_operator: "OR"
+      regexes:
+        - .*esmoking.*
+        - .*e-smoking.*
+        - .*eliquid.*
+        - .*e-liquid.*
+        - .*vape.*
+        - .*epapieros.*
+        - .*e-papieros.*
+        - .*premix.*
+        - .*konop.*
+        - .*shisha.*
